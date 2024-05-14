@@ -33,3 +33,27 @@ for (let i = 2; i < 1000000; i++) {
     Fibonacci.push(Fibonacci[Fibonacci.length-2] + Fibonacci[Fibonacci.length-1]);
 }
 console.log(Fibonacci);
+
+// 5. Remove the Negative
+console.log('5. Remove the Negative');
+let array3 = [1,-2,4,1,-3];
+for (let i = 0; i < array3.length; i++) {
+    if (array3[i] < 0) {
+        array3.splice(i, 1);
+    }
+}
+console.log(array3);
+
+// 6. Communist Censorship
+console.log('6. Communist Censorship');
+let array4 =  ['Man', 'I','Love','The','Matrix','Program'];
+for (let i = 0; i < array4.length; i++) {
+    if (array4[i] == 'Program') {
+        let str = ''
+        for (let j = 0; j < array4[i].length; j++){
+            str +='*'
+        }
+        array4[i] = str;
+    }
+}
+console.log(array4);
