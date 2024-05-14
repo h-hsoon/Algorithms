@@ -25,3 +25,11 @@ for (let i = 1; i <= 135; i++) {
 }
 console.log(array2);
 
+
+// 4. Fibonacci
+console.log('4. Fibonacci');
+let Fibonacci = [0, 1];
+for (let i = 2; i < 1000000; i++) {
+    Fibonacci.push(Fibonacci[Fibonacci.length-2] + Fibonacci[Fibonacci.length-1]);
+}
+console.log(Fibonacci);
