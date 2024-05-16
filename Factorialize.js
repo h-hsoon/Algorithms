@@ -6,4 +6,5 @@ function factorialize(num) {
         return num * factorialize(num - 1);
     }
 }
-console.log(factorialize(9));
+ let factor = factorialize(5);
+ console.log(factor);
